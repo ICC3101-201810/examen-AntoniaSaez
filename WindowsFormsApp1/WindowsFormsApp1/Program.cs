@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
         static void Main()
         {
             Registro nuevoregistro;
+
             if (File.Exists("../../Serialized.txt"))
             {
                 BinaryFormatter bin = new BinaryFormatter();

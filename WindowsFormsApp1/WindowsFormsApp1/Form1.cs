@@ -30,6 +30,10 @@ namespace WindowsFormsApp1
         private void buttonJugar_Click(object sender, EventArgs e)
         {
             string nombreusuario = textBoxNombreUsuario.Text;
+            Usuario nuevousuario = new Usuario(nombreusuario);
+            nuevoregistro.AgregarUsuario(nuevousuario);
+
+            textBoxUsuario.AppendText(nombreusuario);
 
             panel2.BringToFront();
             pictureBox33.Image = Image.FromFile("C:pacman-right.png");
@@ -50,7 +54,7 @@ namespace WindowsFormsApp1
 
         private void buttonComenzar_Click(object sender, EventArgs e)
         {
-            timerfrutas.Interval = 4000;
+            timerfrutas.Interval = 30000;
             timerfrutas.Start();
 
             timerDesaparecer.Interval = 10000;

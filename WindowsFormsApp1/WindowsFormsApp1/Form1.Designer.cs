@@ -66,6 +66,8 @@
             this.timerDesaparecer = new System.Windows.Forms.Timer(this.components);
             this.buttonPausa = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -104,7 +106,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(31, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(116, 50);
+            this.panel1.Size = new System.Drawing.Size(380, 304);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -145,13 +147,15 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBoxUsuario);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.buttonSalir);
             this.panel2.Controls.Add(this.buttonPausa);
             this.panel2.Controls.Add(this.buttonComenzar);
             this.panel2.Controls.Add(this.tableLayoutPanel1);
-            this.panel2.Location = new System.Drawing.Point(248, 12);
+            this.panel2.Location = new System.Drawing.Point(417, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(392, 343);
+            this.panel2.Size = new System.Drawing.Size(282, 290);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -420,7 +424,7 @@
             // 
             // buttonPausa
             // 
-            this.buttonPausa.Location = new System.Drawing.Point(39, 22);
+            this.buttonPausa.Location = new System.Drawing.Point(184, 310);
             this.buttonPausa.Name = "buttonPausa";
             this.buttonPausa.Size = new System.Drawing.Size(75, 23);
             this.buttonPausa.TabIndex = 42;
@@ -438,6 +442,22 @@
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Usuario :";
+            // 
+            // textBoxUsuario
+            // 
+            this.textBoxUsuario.Location = new System.Drawing.Point(94, 19);
+            this.textBoxUsuario.Name = "textBoxUsuario";
+            this.textBoxUsuario.Size = new System.Drawing.Size(100, 20);
+            this.textBoxUsuario.TabIndex = 45;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,6 +470,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
@@ -519,6 +540,8 @@
         private System.Windows.Forms.Timer timerDesaparecer;
         private System.Windows.Forms.Button buttonPausa;
         private System.Windows.Forms.Button buttonSalir;
+        private System.Windows.Forms.TextBox textBoxUsuario;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
+    [Serializable]
     public class Usuario
     {
         string Nombre;
-        int Puntaje;
-        int Tiempo;
+     
+        
 
-        public Usuario(string miNombre, int miPuntaje, int miTiempo)
+        public Usuario(string miNombre)
         {
             Nombre = miNombre;
-            Puntaje = miPuntaje;
-            Tiempo = miTiempo;
+           
         }
     }
 }
